@@ -31,7 +31,7 @@ for ((i = 0; i<5; i++))
 do
     for((j = 0; j<5-i-1; j++))
     do
-        if [ ${arr[j]} -gt ${arr[$((j+1))]} ]
+        if [ ${arr[j]} -lt ${arr[$((j+1))]} ]
         then
             temp=${arr[j]}
             arr[$j]=${arr[$((j+1))]}
@@ -39,3 +39,5 @@ do
         fi
     done
 done
+
+echo ${arr[@]}
