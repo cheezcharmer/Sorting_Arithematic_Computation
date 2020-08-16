@@ -22,3 +22,8 @@ compute[3]=$UC3
 compute[4]=`echo $UC4`
 compute[5]=$UC5
 
+for (( i=2; i<=5; i++ ))
+do
+	arr[$i]=${compute[$i]}
+done
+
