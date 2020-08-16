@@ -27,8 +27,6 @@ do
 	arr[$i]=${compute[$(($i+2))]}
 done
 
-echo ${arr[@]}
-
 for ((i = 0; i<5; i++))
 do
     for((j = 0; j<5-i-1; j++))
@@ -41,5 +39,3 @@ do
         fi
     done
 done
-
-echo ${arr[@]}
