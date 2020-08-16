@@ -15,3 +15,10 @@ echo "c + a / b = "$UC4
 
 UC5=$(($a%$b+$c))
 echo "a % b + c = "$UC5
+
+declare -A compute
+compute[2]=$UC2
+compute[3]=$UC3
+compute[4]=`echo $UC4`
+compute[5]=$UC5
+
