@@ -39,5 +39,3 @@ do
         fi
     done
 done
-
-echo ${arr[@]}
